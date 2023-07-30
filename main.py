@@ -32,7 +32,7 @@ os.makedirs(train_path, exist_ok=True)
 os.makedirs(val_path, exist_ok=True)
 os.makedirs(test_path, exist_ok=True)
 
-# Move files to the train folder
+# Move files to train folder
 for i in range(train_num):
     move_me = file_list.pop()
     os.rename(move_me, os.path.join(train_path, move_me.name))
